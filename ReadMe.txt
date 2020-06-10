@@ -1,8 +1,8 @@
 ==============[About Project]===============
 ____________________________________________
-Here I am 'Sudipta Mandal' A full Stack Dev-
--loper, I just want to upload my smalltutor-
--ial project here today:10/6/2020
+Here I am 'Sudipta Mandal' A full Stack Web 
+Devloper, I just want to upload my small tu-
+-torial project here today:10/6/2020
 ____________________________________________
 ==========[Project File Structure]==========
 ____________________________________________
