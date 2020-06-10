@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/CaptureImage.css">
+</head>
+
+<body>
+    <div id="ImageCapture_Page">
+        <div id="ImageCapture_Page_Inner_Container">
+            <div class="Normal ImageCapture_Page_Heading">
+                Capture Your Image
+            </div>
+
+            <div class="Normal Image_Previewing_Section">
+                
+                <div class="VideoStreaming_Section" id="Video_Showing_Container">
+                    <video id="stream"></video>
+                </div>
+                
+                <div class="Image_Previe_List"  id="Image_Showing_Container">
+                    <div id="snapshot"></div>
+                    <canvas id="capture"></canvas>
+                </div>
+            </div>
+
+            <div class="Normal Captureing_Button_Section">
+                <button id="btn-start" type="button" class="button">Start Streaming</button>
+                <button id="btn-stop" type="button" class="button btn_stop_Hide">Stop Streaming</button>
+                <button id="btn-capture" type="button" class="button">Capture Image</button>
+                <button id="btn-try-again" type="button" class="button btn_try_again_Hide">Try Again</button>
+                <a id="download" download="image.png">
+                    <button tpe="button" class="button">
+                        Try Again
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="js/CaptureImage.js" async defer></script>
+</body>
+
+</html>
