@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#ImageCapture_Page{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: aliceblue;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 0px;
+}
+#ImageCapture_Page_Inner_Container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 280px 40px;
+    grid-gap: 5px;
+    height: 100%;
+    width: 100%;
+    max-width: 360px;
+    background-color: #fff;
+    overflow: auto;
+}
+#ImageCapture_Page_Inner_Container::-webkit-scrollbar{
+    display: none;
+}
+.Normal{
+    box-shadow: 0px 0px 2px #333;
+}
+.ImageCapture_Page_Heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: green;
+    background-color: #fff;
+}
+.Image_Previewing_Section{
+    background-color: #fff;
+    height: 280px;
+    overflow: hidden;
+}
+.VideoStreaming_Section_Hide{
+    display: none;
+}
+.VideoStreaming_Section{
+    height: 280px;
+    width: 100%;
+}
+.VideoStreaming_Section video{
+    height: 280px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.Image_Previe_List{
+    height: 280px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.Image_Previe_List_Hide{
+    display: none;
+}
+#snapshot{
+    height: 280px;
+    width: 100%;
+}
+#snapshot img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.Image_Previe_List canvas{
+    height: 280px;
+    width: 100%;
+    display: none;
+}
+
+.Captureing_Button_Section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button{
+    height: 30px;
+    width: auto;
+    font-size: 14px;
+    padding: 0px 5px;
+    background-color: rgba(207, 251, 181, 0.768);
+    color: rgb(39, 163, 251);
+    border: none;
+    box-shadow: 0px 0px 2px #333;
+}
+
+.btn_start_Hide{
+    display: none;
+}
+.btn_stop_Hide{
+    display: none;
+}
+.btn_capture_Hide{
+    display: none;
+}
+.btn_try_again_Hide{
+    display: none;
+}
+.button_hide{
+    display: none;
+}
+@media only screen and (max-width: 420px){
+    #ImageCapture_Page_Inner_Container{
+        width: 100%;
+        max-width: 100%;
+    }
+}
